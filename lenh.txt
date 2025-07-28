@@ -1,0 +1,55 @@
+lenh
+cd : duy chuyen vao thu muc
+mkdir [namefile] : tao thu muc moi
+ls : list all file in that folder
+touch 'name' : add new file
+echo 'text' > [name file] : add text to file (overwrite)
+echo 'text' >> [name file]: add text to file ( new line)
+cat [name file] : export text in that file
+diff [name file 1] [name file 2] : check the different between 2 files
+rm 'name file' : remove file
+rm -d [folder name] ( empty folder only): remove folder
+-------------------------------------------
+
+git config --global user.name [name]
+git config --global user.email [email]
+
+git config --local user.name [name]
+git config --local user.name [name]
+
+-------------------------------------------
+git init [git name]: create git folder
+git add [file name (s) ] : them tep vao index
+git add . : them tat ca tep vao index
+git commit -m 'noi dung ghi chu hanh dong da lam gi': tao commit
+git status : su khac biet giua 3 cai ( head, index, repository)
+git diff: so sanh commit cuoi cung
+git log: xem lich su
+git log --oneline: xem lich su 1 dong
+git show 'code' : xem toan bo lich su ve lenh do
+-----------------------------------------
+git init --bare [name] : create a central repo
+git clone [reponame] [clone name]: create a clone
+git fetch : get in4 about commit from central
+git pull: get data from central to local repo
+git push: push commit from local repo to central
+------------------------------
+git branch -l : xem ten nhanh
+git branch [branch name] : tao nhanh
+git checkout [commit id] : move to that commit
+git branch -d : xoa nhanh da merge
+git branch -D : xoa nhanh chua merge
+git switch [branch name] : switch qua nhanh khac
+git merge [sub_branch name]
+git log --oneline --graph : show log va graph de xem va solve conflict
+-----------------------------------------------
+git restore [file name] : dua ve trang thai commit cuoi cung ( xoa het trong working area)
+git restore --staged [file name] : dua file ra khoi staging area
+git restore . : khoi phuc tat ca file
+git restore --source HEAD~N [file name] : dua ve commit truoc N buoc
+git reset [macommit]: xoa cac commit hien tai ( bo file da chinh sua ra khoi staging area )
+git reset [macommit] --hard : xoa cac commit hien tai ( xoa cac chinh sua , xoa khoi staging area)
+git reset [macommit] --soft : xoa cac commit hien tai (giu nguyen cac chinh sua va dua vo stagin area)
+git revert [macommit]: tao 1 revert giong commit truoc do ( A -> B, revert B se tao ra C cung state voi A)
+
+
