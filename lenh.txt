@@ -51,5 +51,24 @@ git reset [macommit]: xoa cac commit hien tai ( bo file da chinh sua ra khoi sta
 git reset [macommit] --hard : xoa cac commit hien tai ( xoa cac chinh sua , xoa khoi staging area)
 git reset [macommit] --soft : xoa cac commit hien tai (giu nguyen cac chinh sua va dua vo stagin area)
 git revert [macommit]: tao 1 revert giong commit truoc do ( A -> B, revert B se tao ra C cung state voi A)
+------------------------------------------------
+.gitignore:
+Folder: [namefolder] , [namefolder] / : git ko theo doi folder 
+.xy: *.xy : bo qua tat ca cac file co duoi .xy
+.xy o ngoai root: /*xy : bo qua cac file .xy o ngoai root, track cac file trong subfolder
+file trong folder: [namefolder] / [namefile]
+-----------------------------------------------
+git tag: xem cac tag hien co
+git tag [tagname]: dat ten cho commit hien tai
+git tag -d [tagname]: xoa ten tag hien tai
+git tag [tagname] [commithash]: tao tag cho commit cu
+git tag -a [tagname] [commithash] -m [comment]: tao tag annotated cho commit
+-----------------------------------------------------
+git stash: luu cac thay doi chua muon commit 
+git stash list: list cac tash
+git stash apply : apply tash moi nhat
+git stash drop: xoa tash cu the
+git stash pop: apply va xoa stash khoi list
+git stash clear: xoa toan bo cac stash
 
 
